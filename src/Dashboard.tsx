@@ -81,7 +81,7 @@ const Design1 = () => {
                 </div>
               )}
             </div>
-          </div>
+                </div>
           {/* Daily Summary Bar (moved here) */}
           <div style={{ display: 'flex', justifyContent: 'space-between', background: '#f8f9fa', borderRadius: 6, padding: '6px 0', marginBottom: 8 }}>
             {[
@@ -163,19 +163,19 @@ const Design1 = () => {
                           <div style={{ display: 'flex', alignItems: 'center', gap: 4, justifyContent: 'flex-end', marginBottom: 2 }}>
                             <span style={{ fontWeight: 'bold', fontSize: 15, color: isFull ? '#f44336' : '#888' }}>{availableTables}/{totalTables}</span>
                             <span style={{ color: isFull ? '#f44336' : '#888', fontWeight: 'bold', fontSize: 14, border: isFull ? '1px solid #f44336' : '1px solid #bbb', borderRadius: 4, padding: '0 4px', background: isFull ? '#fff0f0' : '#fafafa' }}>{isFull ? '滿' : '可'}</span>
-                          </div>
+              </div>
                           {/* Events and other info below */}
                           {events.map((ev, i) => (
                             <div key={i} style={{ display: 'flex', alignItems: 'center', marginBottom: 4, fontSize: 14, color: '#222' }}>
                               <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: '50%', background: ev.color, marginRight: 6 }}></span>
                               <span>{ev.label}</span>
-                            </div>
+            </div>
                           ))}
                           {(rowIdx === 1 && colIdx === 0) && <span style={{ color: '#f44336', fontSize: 12 }}>還有 2組</span>}
-                        </div>
+              </div>
                       );
                     })}
-                  </div>
+              </div>
                 );
               })}
             </div>

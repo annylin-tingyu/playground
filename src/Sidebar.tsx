@@ -12,6 +12,9 @@ const Sidebar = () => {
       <Link to="/design2" style={{ textDecoration: 'none', marginBottom: 16, width: '100%' }}>
         <div style={{ color: location.pathname === '/design2' ? '#f44336' : '#888', background: location.pathname === '/design2' ? '#fff' : 'none', borderRadius: 8, padding: '8px 0', textAlign: 'center', fontWeight: location.pathname === '/design2' ? 'bold' : 'normal', fontSize: 15 }}>Design 2</div>
       </Link>
+      <Link to="/design3" style={{ textDecoration: 'none', marginBottom: 16, width: '100%' }}>
+        <div style={{ color: location.pathname === '/design3' ? '#f44336' : '#888', background: location.pathname === '/design3' ? '#fff' : 'none', borderRadius: 8, padding: '8px 0', textAlign: 'center', fontWeight: location.pathname === '/design3' ? 'bold' : 'normal', fontSize: 15 }}>Design 3</div>
+      </Link>
     </div>
   );
 };
